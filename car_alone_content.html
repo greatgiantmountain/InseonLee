@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow with Thumbnails</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="subtitle">
+            <div class="text-box">
+                <h2>차에서 쉬는 사람들, 2024</h2>
+                <h4>친구는 퇴근하고 지하주차장에 주차를 하고 올라가기 전 잠깐 음악을 틀어놓고 10분에서 20분정도 쉬었다가 올라간다는 이야기를 해주었다.</br>
+                이 이야기를 들었을 때는 ‘굳이 집에서 쉬면 되지 왜 어중간한 차라는 공간에서 쉬지?’라는 생각이 들었다.</br>
+                그 뒤 다른 친구들을 만나며 차에서 쉬는 친구가 있다고 간략하게 이야기를 하니 그런 사람들 되게 많다는 이야기를 들었다. 인터넷에 검색해보니 실제로 차에서 쉬는 사람들이 많다는 것을 알게되었다.</br>
+                퇴근 후 가사노동이나 육아를 시작하기 전 숨고르기를 위해 잠깐 차에서 쉰다는 사람도 있었고, 회사 점심시간에 회사 동료들을 마주치지 않고 편하게 쉬고싶어 차에 들어간다는 사람도 있었다.</br>
+                그러고보니 나 또한 잘 곳이 없어서 차에서 잔적이 있었다.</br>
+                차라는 공간이 이동수단 만이 아닌 휴식의 공간으로도 쓰인다는 것이 흥미로웠다. 차에서 휴식이 이루어질 수 있는 이유는 아마도 막힌 공간 때문일 것이다. 아무한테도 방해 받지 않는 나만의 공간이라는 생각에서이지 않을까.</br>
+                차라는 공간이 그렇기에 사람들의 내밀한 공간이라는 느낌이 들었다. 차에서 쉬는 사람들은 어떤 내밀한 감정을 표출하는지 궁금해 작업을 시작하였다.</h4>
+            </div>
+            <section id="thumbnails">
+                <img id="thumbnail_carAlone_1" src="image/carAlone/carAlone1.jpg" class="thumbnail" onclick="openFullscreen('carAlone_1')">
+                <img id="thumbnail_carAlone_2" src="image/carAlone/carAlone2.jpg" class="thumbnail" onclick="openFullscreen('carAlone_2')">
+                <img id="thumbnail_carAlone_3" src="image/carAlone/carAlone3.jpg" class="thumbnail" onclick="openFullscreen('carAlone_3')">
+                <img id="thumbnail_carAlone_4" src="image/carAlone/carAlone4.jpg" class="thumbnail" onclick="openFullscreen('carAlone_4')">
+                <img id="thumbnail_carAlone_5" src="image/carAlone/carAlone5.jpg" class="thumbnail" onclick="openFullscreen('carAlone_5')">
+                <img id="thumbnail_carAlone_6" src="image/carAlone/carAlone6.jpg" class="thumbnail" onclick="openFullscreen('carAlone_6')">
+                <img id="thumbnail_carAlone_7" src="image/carAlone/carAlone7.jpg" class="thumbnail" onclick="openFullscreen('carAlone_7')">
+                <img id="thumbnail_carAlone_8" src="image/carAlone/carAlone8.jpg" class="thumbnail" onclick="openFullscreen('carAlone_8')">
+                <img id="thumbnail_carAlone_9" src="image/carAlone/carAlone9.jpg" class="thumbnail" onclick="openFullscreen('carAlone_9')">
+                <img id="thumbnail_carAlone_10" src="image/carAlone/carAlone10.jpg" class="thumbnail" onclick="openFullscreen('carAlone_10')">
+                <img id="thumbnail_carAlone_11" src="image/carAlone/carAlone11.jpg" class="thumbnail" onclick="openFullscreen('carAlone_11')">
+                <img id="thumbnail_carAlone_12" src="image/carAlone/carAlone12.jpg" class="thumbnail" onclick="openFullscreen('carAlone_12')">
+                <img id="thumbnail_carAlone_13" src="image/carAlone/carAlone13.jpg" class="thumbnail" onclick="openFullscreen('carAlone_13')">
+                <img id="thumbnail_carAlone_14" src="image/carAlone/carAlone14.jpg" class="thumbnail" onclick="openFullscreen('carAlone_14')">
+                <img id="thumbnail_carAlone_15" src="image/carAlone/carAlone15.jpg" class="thumbnail" onclick="openFullscreen('carAlone_15')">
+                <img id="thumbnail_carAlone_16" src="image/carAlone/carAlone16.jpg" class="thumbnail" onclick="openFullscreen('carAlone_16')">
+                <img id="thumbnail_carAlone_17" src="image/carAlone/carAlone17.jpg" class="thumbnail" onclick="openFullscreen('carAlone_17')">
+                <img id="thumbnail_carAlone_18" src="image/carAlone/carAlone18.jpg" class="thumbnail" onclick="openFullscreen('carAlone_18')">
+                <img id="thumbnail_carAlone_19" src="image/carAlone/carAlone19.jpg" class="thumbnail" onclick="openFullscreen('carAlone_19')">
+
+
+
+                <!-- 다른 썸네일 이미지들도 동일하게 작성합니다. -->
+            </section>
+            
+            <!-- Fullscreen Modal -->
+            <div id="modal" class="modal" onclick="closeFullscreen()">
+                <span class="close" onclick="closeFullscreen(event)">&times;</span>
+                <a class="prev" onclick="plusSlides(-1, event)">&#10094;</a>
+                <img class="modal-content" id="modalImage">
+                <a class="next" onclick="plusSlides(1, event)">&#10095;</a>
+            </div>
+            
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
